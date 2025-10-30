@@ -1,4 +1,4 @@
-# type() არის ფუნქცია, რომელიც ამოწმებს მისთვის გადაცემული მონაცემის ტიპს 
+    #   type() არის ფუნქცია, რომელიც ამოწმებს მისთვის გადაცემული მონაცემის ტიპს 
 
 # Data Conversion ნიშნავს მონაცემთა ტიპის გადაყვანას სხვა ტიპად.
 # მაგალითად, სტრინგის რიცხვად გადაყვანას, ან პირიქით.
@@ -39,25 +39,49 @@
 # print(type(bool_to_int))  
 
 
+  
 
 
-num1 = int(input("შეიყვანე პირველი რიცხვი: "))
-num2 = int(input("შეიყვანე მეორე რიცხვი: "))
-num3 = int(input("შეიყვანე მესამე რიცხვი: "))
 
 
-print(type(num1))  
-print(type(num2))  
-print(type(num3))  
 
 
-num1_str = str(num1)
-num2_str = str(num2)
-num3_str = str(num3)
 
-print(type(num1_str))  
-print(type(num2_str)) 
-print(type(num3_str))  
+# num1 = int(input("შეიყვანე პირველი რიცხვი: "))
+# num2 = int(input("შეიყვანე მეორე რიცხვი: "))
+# num3 = int(input("შეიყვანე მესამე რიცხვი: "))
 
 
+# print(type(num1))  
+# print(type(num2))  
+# print(type(num3))  
+
+
+# num1_str = str(num1)
+# num2_str = str(num2)
+# num3_str = str(num3)
+
+# print(type(num1_str))  
+# print(type(num2_str)) 
+# print(type(num3_str))  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+# name = input("შენი სახელი შეიყვანე: ")
+
+
+# print("მომხმარებლის სახელი არის:", name)
+
+
+# print("მონაცემის ტიპია:", type(name))  
 
