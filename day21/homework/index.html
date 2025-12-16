@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <!-- ფორმა გამოიყენება მომხმარებლის მონაცემების შესაგროვებლად -->
+    <form>
+
+        <!-- ტექსტური input სახელისათვის -->
+        <!-- placeholder აჩვენებს მინიშნებას input-ის შიგნით -->
+        <!-- required ნიშნავს, რომ ველი სავალდებულოა -->
+        <label>სახელი:</label><br>
+        <input type="text" name="firstname" placeholder="შეიყვანეთ სახელი" required>
+        <br><br>
+
+        <!-- ტექსტური input გვარისათვის -->
+        <label>გვარი:</label><br>
+        <input type="text" name="lastname" placeholder="შეიყვანეთ გვარი" required>
+        <br><br>
+
+        <!-- email ტიპის input ამოწმებს სწორ ემაილს -->
+        <label>ელ. ფოსტა:</label><br>
+        <input type="email" name="email" placeholder="example@gmail.com" required>
+        <br><br>
+
+        <!-- password ტიპის input მალავს შეყვანილ ტექსტს -->
+        <label>პაროლი:</label><br>
+        <input type="password" name="password" placeholder="შეიყვანეთ პაროლი" required>
+        <br><br>
+
+        <!-- radio input გამოიყენება ერთი არჩევანის გასაკეთებლად -->
+        <!-- ყველა radio-ს ერთნაირი name უნდა ჰქონდეს -->
+        <label>გენდერი:</label><br>
+
+        <input type="radio" name="gender" value="male" required>
+        <label>მამრობითი</label><br>
+
+        <input type="radio" name="gender" value="female">
+        <label>მდედრობითი</label><br><br>
+
+        <!-- ღილაკი ფორმის გასაგზავნად -->
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
+
