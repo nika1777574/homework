@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>რეგისტრაცია</title>
+</head>
+<body>
+
+    <h1>რეგისტრაციის ფორმა</h1>
+
+    <form>
+
+        <!-- სახელი -->
+        <label for="fname">სახელი:</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="შეიყვანეთ სახელი" required>
+        <br><br>
+
+        <!-- გვარი -->
+        <label for="lname">გვარი:</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="შეიყვანეთ გვარი" required>
+        <br><br>
+
+        <!-- ასაკი -->
+        <label for="age">ასაკი:</label><br>
+        <input type="number" id="age" name="age" placeholder="შეიყვანეთ ასაკი" min="1" max="120" required>
+        <br><br>
+
+        <!-- გენდერი -->
+        <p>გენდერი:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">მამრობითი</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">მდედრობითი</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">სხვა</label>
+        <br><br>
+
+        <!-- ქვეყანა (ჩამოსაშლელი მენიუ) -->
+        <label for="country">ქვეყანა:</label><br>
+        <select id="country" name="country" required>
+            <option value="">აირჩიეთ ქვეყანა</option>
+            <option value="georgia">საქართველო</option>
+            <option value="usa">აშშ</option>
+            <option value="germany">გერმანია</option>
+            <option value="france">საფრანგეთი</option>
+            <option value="italy">იტალია</option>
+            <option value="spain">ესპანეთი</option>
+            <option value="uk">ინგლისი</option>
+            <option value="turkey">თურქეთი</option>
+            <option value="canada">კანადა</option>
+            <option value="japan">იაპონია</option>
+        </select>
+        <br><br>
+
+        <!-- პოლიტიკაზე დათანხმება -->
+        <input type="checkbox" id="rules" name="rules" required>
+        <label for="rules">
+            ვეთანხმები საიტის გამოყენების პოლიტიკას და წესებს
+        </label>
+        <br><br>
+
+        <!-- რეგისტრაციის ღილაკი -->
+        <button type="submit">რეგისტრაცია</button>
+
+    </form>
+
+</body>
+</html>
