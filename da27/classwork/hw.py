@@ -22,3 +22,10 @@ copied_cars[7] = "Tesla"
 
 print("ორიგინალი სია:", cars)
 print("დაკოპირებული სია:", copied_cars)
+
+
+numbers = [3, 7, 12, 5, 9]
+
+for num in numbers:
+    print(num)
+
