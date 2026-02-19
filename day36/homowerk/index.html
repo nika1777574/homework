@@ -1,34 +1,157 @@
-
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-    <meta charset="UTF-8">
-    <title>First site</title>
+<meta charset="UTF-8">
+<title>Movie Site</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f2f2f2;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+
+.section-nav {
+  margin-top: 20px;
+}
+
+.section-nav a {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 15px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.movie {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+input, select {
+  width: 100%;
+  margin: 5px 0 10px;
+  padding: 6px;
+}
+
+button {
+  padding: 8px;
+  width: 100%;
+  background: #333;
+  color: white;
+  border: none;
+}
+</style>
+
 </head>
 
+<body>
 
-    <h1 style=" color: black; background-color: rgb(0, 247, 255); text-align: center; ">favourite movies</body>
+<header>
+  <div class="logo">🎬 MovieSite</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#favorites">Favorites</a>
+    <a href="#register">Register</a>
+  </nav>
+</header>
 
-    </h1>
+<main>
 
-<nav>
-  <h1 style="text-align: center;"> 
-        <a  href="#home ">Home </a>
-        <a href="#register">register</a>
-        <a href="#favourite">favourite</a>
-  </h1>
-</nav>
 <section id="home">
-<img src="https://play-lh.googleusercontent.com/rQATPjJPoA2RFivJ1ziV5MRKOWug_Hy40VXU9hD9JU7DsTrMw5FLqYc8st2yq2UU54sR"style=" background-color:black"width="80">
+<h1>Popular Movies</h1>
+
+<div class="grid">
+
+<div class="movie">
+<img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg">
+<h3>Inception</h3>
+<p>2010 • ⭐ 8.8</p>
+</div>
+
+<div class="movie">
+<img src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg">
+<h3>Interstellar</h3>
+<p>2014 • ⭐ 8.7</p>
+</div>
+
+<div class="movie">
+<img src="https://m.media-amazon.com/images/I/91HM6470jLL._AC_UF894,1000_QL80_.jpg">
+<h3>The Dark Knight</h3>
+<p>2008 • ⭐ 9.0</p>
+</div>
+
+</div>
 
 
-<img src=" https://img.freepik.com/premium-psd/3d-render-popcorn-with-cinema-time_252008-391.jpg "width="1500">
 
-
-
-
-
-
+<div class="section-nav">
+<a href="#favorites">Go to Favorites</a>
+<a href="#register">Go to Register</a>
+</div>
 <br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -56,78 +179,40 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
+</section>
+ 
 
-<nav>
-  <h1 style="text-align: center;"> 
-        <a  href="#home ">Home </a>
-        <a href="#register">register</a>
-        <a href="#favourite">favourite</a>
-  </h1>
-</nav>
+<section id="favorites">
+<h1>Favourite Movies</h1>
 
+<div class="grid">
 
-<section id="register">
+<div class="movie">
+<img src="https://adjaranett.com/uploads/posts/2022-08//samefo-karis-tamashebi-qartulad.webp">
+<h3>Game of Thrones</h3>
+</div>
 
- <body>
-    <form>
+<div class="movie">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtX0j68ZPTysDkext0wpglEXPMIihggXDhUA&s">
+<h3>Prison Break</h3>
+</div>
 
-         <h2>რეგისტრაციის ფორმა</h2>
-<label for="name">სახელი:</label><br>
-    <input type="text" id="name"  name="name" placeholder="შეიყვანეთ თქვენი სახელი"required>
+<div class="movie">
+<img src="https://img.mykadri.click/uploads/posts/2025-02/thumbs/wnb551tseb7kfu3an5lworgvupn.jpg">
+<h3>The Lord of the Rings</h3>
+</div>
 
-    <br><br>
-        
+</div>
 
-<label for="email">ემაილი:</label><br>
-    <input 
-        type="email" id="email" name="email" placeholder="example@gmail.com"required>
-        
-        
-        <br><br>
-<label for="password">პაროლი:</label><br>
-    <input 
-        type="password" id="password" name="password"placeholder="შეიყვანეთ პაროლი"required>
-        <br><br>
+<div class="section-nav">
+<a href="#home">Go to Home</a>
+<a href="#register">Go to Register</a>
+</div>
 
-<label for="birthdate">დაბადების თარიღი:</label><br>
-    <input 
-        type="date" id="birthdate"  name="birthdate"required>
-        <br><br>
-
-<label>გენდერი:</label><br>
-    <input 
-        type="radio" id="male" name="gender"value="male" required>
-
-
-<label for="male">მამრობითი</label><br>
-    <input 
-        type="radio" id="female" name="gender" value="female">
-
-<label for="female">მდედრობითი</label><br><br>
-    <input 
-        type="checkbox" id="terms"  name="terms" required>
-
-<label for="terms">
-            ვეთანხმები საიტის გამოყენების პოლიტიკასა და წესებს
-</label>
-        <br><br>
-
-       
-        <input type="submit" value="რეგისტრაცია">
-
-    </form>
-
-    
-</body>
 </section>
 
 
 
-
-
-
-
-
 <br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -156,56 +241,56 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 
+<section id="register">
+<h1>Registration</h1>
+<form>
+<label>Full Name</label>
+<input type="text" required>
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Password</label>
+<input type="password" required>
+
+<label>Gender</label>
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+
+<label>Country</label>
+<select>
+<option>Georgia</option>
+<option>USA</option>
+<option>Germany</option>
+</select>
+
+<label>
+<input type="checkbox" required>
+I agree to terms
+</label>
+
+<button>Register</button>
+</form>
+
+<div class="section-nav">
+<a href="#home">Go to Home</a>
+<a href="#favorites">Go to Favorites</a>
+</div>
+
+</section>
+
+</main>
 
 
 
-
-
-<section id="favourite"></section>
-        <h1 style="text-align: center;background-color:rgb(41, 1, 245)" >Home Section</h1> 
-<img  src="https://cdn.fortuna.ge/app/uploads/2024/11/2024-11-01_12-00-22_676986-1024x576.jpg"style=" background-color:black" width="400">  <br><br>
-<Button>watch</Button>
-
-<img  src=""style=" background-color:black" width="400">
-
+<footer>
 <nav>
-  <h1 style="text-align: center;"> 
-        <a  href="#home ">Home </a>
-        <a href="#register">register</a>
-       <a href="#favourite">favourite</a>
-  </h1>
+<a href="#home">Home</a>
+<a href="#favorites">Favorites</a>
+<a href="#register">Register</a>
 </nav>
-
-
-
-
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
+<p>© 2025 MovieSite</p>
+</footer>
 
 
 
@@ -237,49 +322,7 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 
-
-
-
-
-
-
-
-<style>
-     .photos {
-     display: flex;
-     gap: 10px; 
-     }photos img {
-     width: 200px;}
-
-</style>
-
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
 
 
 </body>
+</html>
