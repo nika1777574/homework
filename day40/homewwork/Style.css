@@ -1,0 +1,15 @@
+
+.container p, .container button {
+  color: red;
+  background-color: black;
+}
+
+.container p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container button {
+  width: 160px;
+  height: 50px;
+}
