@@ -1,0 +1,45 @@
+body {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container {
+    width: 400px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.box {
+    background-color: green;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.A {
+    
+    margin-top: -10px;
+}
+
+.row {
+    display: flex;
+}
+
+
+.B, .C {
+    flex: 1;
+}
+
+.D {
+    flex: 1;
+}
+
+.E {
+    flex: 2;
+}
