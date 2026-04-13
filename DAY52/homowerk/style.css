@@ -1,0 +1,50 @@
+body {
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 600px;
+}
+
+.top, .bottom {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.big {
+  background: tomato;
+  flex: 1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.right, .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row div {
+  background: tomato;
+  flex: 1;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
