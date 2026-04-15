@@ -1,0 +1,52 @@
+body {
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  color: white;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.location {
+  color: #c4f82a;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.bio {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.buttons a {
+  display: block;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #c4f82a;
+  color: black;
+}
