@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+body {
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Overlay (ლურჯი ფენა) */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 120, 150, 0.5);
+}
+
+/* ტექსტი */
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 28px;
+}
+
+.text p {
+  font-size: 14px;
+}
+
+/* Background images */
+.korea {
+  background-image: url("core.jpg");
+}
+
+.tbilisi {
+  background-image: url("tbilisi.jpg");
+}
+
+.newyork {
+  background-image: url("newyork.jpg");
+}
+
+.paris {
+  background-image: url("paris.jpg");
+}
+
+.tokyo {
+  background-image: url("tokyo.jpg");
+}
+
+.dubai {
+  background-image: url("dubai.jpg");
+}
