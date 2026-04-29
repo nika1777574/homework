@@ -1,0 +1,21 @@
+.parent {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+}
