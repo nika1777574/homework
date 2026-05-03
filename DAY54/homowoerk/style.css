@@ -15,20 +15,24 @@ body {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  gap: 25px;
+  gap: 20px;
+  padding: 40px;
 }
 
 .card {
-  position: relative;
-  height: 200px;
-  border-radius: 20px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+height: 200px;
+border-radius: 15px;
+color: white;
+display: felx;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-size: cover;
+background-position: center;
+position: relative;
+overflow: hidden;
 }
 
-/* Overlay (ლურჯი ფენა) */
 .overlay {
   position: absolute;
   width: 100%;
@@ -36,7 +40,7 @@ body {
   background: rgba(0, 120, 150, 0.5);
 }
 
-/* ტექსტი */
+
 .text {
   position: absolute;
   top: 50%;
@@ -54,7 +58,6 @@ body {
   font-size: 14px;
 }
 
-/* Background images */
 .korea {
   background-image: url("core.jpg");
 }
