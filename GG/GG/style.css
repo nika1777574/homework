@@ -1,0 +1,114 @@
+body {
+background-color:rgb(225, 225, 198) ;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.card{
+width: 100%;
+display: flex;
+max-width:600px;
+background:white ;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.left img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+h2 {
+   font-family: 'fraunces',serif;
+   font-size: 32px;
+   font-weight: 700;
+   color :rgb(31, 36, 44);
+   line-height: 1;
+   margin: 10px 0;
+   max-width: 220px;
+}
+
+.desc {
+ font-size: 14px; 
+ color: gray;  
+}
+
+.price {
+ display: flex;
+ gap: 15px;
+ align-items: center;
+}
+.new{
+   color: green;
+   font-size: 28px;
+   font-weight: bold;
+   font-family: 'fraunces', serif;
+   
+}
+
+.old {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 10px;
+}
+
+
+
+button {
+    width: 180px;
+    padding: 15px;
+    margin-top: 20px;
+    background: green;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-right: 50%;
+    font-family: 'montserrat',sans-serif;
+    cursor: pointer;
+}
+ .button-wrapper {
+    width: 100%;
+ }
+
+
+.category {
+    letter-spacing: 5px;
+    color: gray;
+    font-size: 12px;
+}
+.desc {
+    font-family: 'montserrat',sans-serif;
+    color: gray;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
