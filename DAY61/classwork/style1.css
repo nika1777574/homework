@@ -1,0 +1,41 @@
+div{
+  width: 300px;
+  height: 300px;
+  background-color: purple;
+  margin: auto;
+}
+
+div:hover{
+  animation: colors 5s;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes colors{
+
+  0%{
+    background-color: purple;
+  }
+
+  33%{
+    background-color: red;
+  }
+
+  66%{
+    background-color: blue;
+  }
+
+  100%{
+    background-color: black;
+  }
+
+}
+
+
+
+/* 
+ანიმაციის მუდმივად გასაშვებად ვიყენებთ:
+
+animation-iteration-count: infinite;
+
+*/

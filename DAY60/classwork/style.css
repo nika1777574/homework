@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: all 5s;
+  transform-origin: top right;
+}
+
+.box:hover {
+  transform: translate(200px, -300px) scale(3) rotate(-45deg);
+  background-color: red;
+}
+
+
+
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+
+  transform-origin: top right;
+
+  transition: all 5s;
+  transition-delay: 2s; 
+}
+
+.box:hover {
+  transform: translate(200px, -300px) scale(3) rotate(-45deg);
+  background-color: red;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+
+  transform-origin: top right;
+
+  transition:
+    transform 5s,
+    background-color 2s,
+    scale 2s;
+
+  transition-delay: 2s;
+}
+
+.box:hover {
+  transform: translate(200px, -300px) scale(3) rotate(-45deg);
+  background-color: red;
+}
