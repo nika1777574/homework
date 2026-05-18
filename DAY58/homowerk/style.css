@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas:
+     "ee ee ww ss  "
+     "gg dd dd ss ";
+     margin: auto;
+}
+ 
+#ee{
+    grid-area: ee;
+}
+#ww{
+    grid-area: ww;
+}
+#ss{
+    grid-area: ss;
+}
+#gg{
+    grid-area: gg;
+}
+#dd{
+    grid-area: dd;
+}
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    color: aquamarine;
+}
+.purple{
+    background-color: rgb(156, 102, 206);
+
+}
+.black{
+    background-color: gray;
+
+}
+.red{
+    background-color: rgb(25, 127, 252);
+}
+.blue{
+    background-color: brown;
+
+}
+.yellow{
+    background-color: coral;
+}
+
+
+
