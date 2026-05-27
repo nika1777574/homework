@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    transition: 2s;
+}
+
+div:hover{
+    animation: boom 5s infinite;
+    
+}
+
+
+@keyframes boom{
+    0%{
+        background-color: green;
+        transform: scale(1) rotate(0) translate(0, 0);
+        
+    }
+
+    20%{
+        background-color: blue;
+    }
+    40%{
+        background-color: blueviolet;
+    }
+    60%{
+        background-color: brown;
+    }
+    
+    80%{
+        background-color:red ;
+    }
+    100%{
+        background-color:yellow;
+        transform: rotate(-360deg) scale(3) translate(-100px, -300px) ;
+
+    }
+
+}   
